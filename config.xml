@@ -11,13 +11,8 @@
     <access origin="*" />
     <allow-navigation href="*"/>
     <platform name="android" />
-    <icon src="icon_app.png" />
-    <platform name="ios">
-        <icon src="res/icon/ios/icon-120.png" gap:platform="ios" width="120" height="120" />
-        <icon src="res/icon/ios/icon-76.png" gap:platform="ios" width="76" height="76" />
-        <icon src="res/icon/ios/icon-40.png" gap:platform="ios" width="40" height="40" />
-        <icon src="res/icon/ios/icon-152.png" gap:platform="ios" width="152" height="152" />
-    </platform>
+    <icon src="icon.png" />
+    <platform name="ios"/>
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/>
     <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
     <preference name="android-minSdkVersion" value="18"/>
