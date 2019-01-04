@@ -1,6 +1,6 @@
 $(document).ready( function(){
+	//oculta preloader quando o iframe é carregado
 	$("#my_iframe").on("load" , function(){
         $("#layer").hide('slow')
-        //$("#all-hoteis").css("display","block")//exibe botao 'ver todos os hoteis'
   })	
 })

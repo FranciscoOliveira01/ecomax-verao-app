@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="br.com.ecomax.verão" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Verão ecomax</name>
+<widget id="br.com.ecomax.summer" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Ecomax summer</name>
     <description>
-        Verão ecomax
+        Ecomax summer
     </description>
     <author email="franciscoalves@velty.com.br" href="http://velty.com.br">
     	Velty tecnologia
@@ -15,5 +15,5 @@
     <platform name="ios"/>
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/>
     <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
-    <preference name="android-minSdkVersion" value="22"/>
+    <preference name="android-minSdkVersion" value="26"/>
 </widget>
