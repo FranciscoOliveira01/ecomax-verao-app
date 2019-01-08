@@ -11,11 +11,11 @@ $("#my_iframe").on("load" , function(){
         })
 
         //click buuton login facebook
-        $("#my_iframe").contents().find(".face").click(function(e){
-            e.preventDefault()
-            var link = $("#my_iframe").contents().find(".face").attr('href')
+        $("#my_iframe").contents().find(".face").click( function(){
+           
+            var link = $("#my_iframe").contents().find(".face").attr('href');
             navigator.app.loadUrl( link, { openExternal:true } );
-            
+            return false;
         })
 		   
   })
