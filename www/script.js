@@ -11,9 +11,8 @@ $("#my_iframe").on("load" , function(){
         })
 
         //click buuton login facebook
-        $("#my_iframe").contents().find(".face").click( function(e){
-            var link = $("#my_iframe").contents().find(".face").attr('href');
-            e.preventDefault();
+        $("#my_iframe").contents().find(".nav-item .face").click( function(){
+            var link = $("#my_iframe").contents().find(".nav-item .face").attr('href');
             navigator.app.loadUrl( link, { openExternal:true } );  
         })   
   })
