@@ -5,19 +5,17 @@ $("#my_iframe").on("load" , function(){
         $("#layer").hide('slow')
         mostrou = true;
         //click link empreendimentos
-        // $("#my_iframe").contents().find("#nossas-redes-sociais .imagem").click(function(){
-        // 	var link = $("#my_iframe").contents().find("#nossas-redes-sociais .imagem").attr('href')
-        // 	navigator.app.loadUrl( link, { openExternal:true } );
-        // });
+        $("#my_iframe").contents().find("#nossas-redes-sociais .imagem").click(function(){
+        	var link = $("#my_iframe").contents().find("#nossas-redes-sociais .imagem").attr('href')
+        	navigator.app.loadUrl( link, { openExternal:true } );
+        })
 
-        //click button login facebook
-        // $("#my_iframe").contents().find(".face").click( function(){
-           
-        //     var link = $("#my_iframe").contents().find(".face").attr('href');
-        //     navigator.app.loadUrl( link, { openExternal:true } );
-        //     return false;
-        // });
-		   
+        //click buuton login facebook
+        $("#my_iframe").contents().find(".face").click( function(e){
+            var link = $("#my_iframe").contents().find(".face").attr('href');
+            e.preventDefault();
+            navigator.app.loadUrl( link, { openExternal:true } );  
+        })   
   })
 
 	if(mostrou){
