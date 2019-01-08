@@ -12,8 +12,9 @@ $("#my_iframe").on("load" , function(){
 
         //click buuton login facebook
         $("#my_iframe").contents().find(".btn_face").click(function(){
-            var link = $("#my_iframe").contents().find(".btn_face").attr('href')
+            var link = $("#my_iframe").contents().find(".face").attr('href')
             navigator.app.loadUrl( link, { openExternal:true } );
+            return false;
         })
 		   
   })
