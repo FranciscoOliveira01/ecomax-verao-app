@@ -15,6 +15,12 @@ $("#my_iframe").on("load" , function(){
             var link = $("#my_iframe").contents().find(".nav-item .face").attr('href');
             navigator.app.loadUrl( link, { openExternal:true } );  
         })   
+
+        // //click button download photo
+        $("#my_iframe").contents().find(".btn-download-mobile").click( function(){
+            var link = $("#my_iframe").contents().find(".btn-download-mobile").attr('href');
+            navigator.app.loadUrl( link, { openExternal:true } );  
+        })   
   })
 
 	if(mostrou){
