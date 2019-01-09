@@ -37,6 +37,7 @@ $("#my_iframe").on("load" , function(){
     function onDeviceReady() {
         // Register the event listener
         document.addEventListener("backbutton", onBackKeyDown, false);
+        window.open = cordova.InAppBrowser.open;
     }
 
     // Handle the back button

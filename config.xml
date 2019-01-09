@@ -9,11 +9,12 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <allow-navigation href="*"/>
+    <allow-navigation href="*" />
     <platform name="android" />
-    <icon src="icon.png"/>
-    <platform name="ios"/>
-    <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/>
-    <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
-    <preference name="android-minSdkVersion" value="24"/>
+    <icon src="icon.png" />
+    <platform name="ios" />
+    <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <preference name="android-minSdkVersion" value="24" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
 </widget>
