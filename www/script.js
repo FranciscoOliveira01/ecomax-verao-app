@@ -6,8 +6,8 @@ $("#my_iframe").on("load" , function(){
         mostrou = true;
         // //click link empreendimentos
         $("#my_iframe").contents().find("#nossas-redes-sociais .imagem").click(function(){
-        	var link = $(this).attr('href')
-        	navigator.app.loadUrl( link, { openExternal:true } );
+          	var link = $(this).attr('href')
+          	navigator.app.loadUrl( link, { openExternal:true } );
         })
 
         // // //click buuton login facebook
@@ -23,7 +23,7 @@ $("#my_iframe").on("load" , function(){
          //        navigator.app.loadUrl( href, { openExternal:true } );  
          // })
         // //click button download photo
-        $('#my_iframe').on('click', '.child-container div .btn-download-mobile', function(e){
+        $('#my_iframe').contents().find('.child-container div .btn-download-mobile').click( function(e){
             e.preventDefault();
             var link = $(this).attr('href');
             navigator.app.loadUrl( link, { openExternal:true } );
