@@ -16,6 +16,9 @@ $("#my_iframe").on("load" , function(){
             navigator.app.loadUrl( link, { openExternal:true } );  
         })   
 
+         $("#my_iframe").contents().find(".mfp-content .btn-download-mobile").click( function(){
+            alert("Botao download");
+         }
         // // //click button download photo
         // $("#my_iframe").contents().find(".btn-download-mobile").click( function(){
         //     var link = $("#my_iframe").contents().find(".btn-download-mobile").attr('href');
