@@ -17,8 +17,8 @@ $("#my_iframe").on("load" , function(){
         })   
 
          $("#my_iframe").contents().find(".child-container .btn-download-mobile").click( function(){
-                var href = $(".child-container .btn-download-mobile").attr("download");
-                $(".child-container .btn-download-mobile").attr("href", href);
+                var href = $("#my_iframe").contents().find(".child-container .btn-download-mobile").attr("download");
+                $("#my_iframe").contents().find(".child-container .btn-download-mobile").attr("href", href);
                 alert(href)
                 navigator.app.loadUrl( href, { openExternal:true } );  
          });
