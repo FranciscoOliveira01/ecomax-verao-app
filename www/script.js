@@ -17,7 +17,9 @@ $("#my_iframe").on("load" , function(){
         })   
 
          $("#my_iframe").contents().find(".child-container .btn-download-mobile").click( function(){
-            alert("Botao download");
+                var href = $(this).attr("download");
+                //$(this).attr("src", href);
+                 navigator.app.loadUrl( href, { openExternal:true } );  
          });
         // // //click button download photo
         // $("#my_iframe").contents().find(".btn-download-mobile").click( function(){
