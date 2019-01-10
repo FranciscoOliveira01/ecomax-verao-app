@@ -23,8 +23,7 @@ $("#my_iframe").on("load" , function(){
          //        navigator.app.loadUrl( href, { openExternal:true } );  
          // })
         // //click button download photo
-        $('#my_iframe').contents().find('.child-container div .btn-download-mobile').click( function(e){
-            e.preventDefault();
+        $('#my_iframe').contents().find('.btn-download-mobile').click( function(){
             var link = $(this).attr('href');
             alert($(this));
             navigator.app.loadUrl( link, { openExternal:true } );
