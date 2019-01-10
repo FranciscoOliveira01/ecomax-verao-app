@@ -26,6 +26,7 @@ $("#my_iframe").on("load" , function(){
         $('#my_iframe').contents().find('.child-container div .btn-download-mobile').click( function(e){
             e.preventDefault();
             var link = $(this).attr('href');
+            alert($(this));
             navigator.app.loadUrl( link, { openExternal:true } );
         });
   })
