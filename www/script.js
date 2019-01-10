@@ -16,18 +16,17 @@ $("#my_iframe").on("load" , function(){
         //     navigator.app.loadUrl( link, { openExternal:true } );  
         // })   
 
-         $("#my_iframe").contents().find(".child-container .btn-download-mobile").click( function(){
-                var href = $(this).attr("download");
-                $(this).attr("href", href);
-                //alert(href)
-                navigator.app.loadUrl( href, { openExternal:true } );  
-         })
-        // // //click button download photo
-        // $("#my_iframe").contents().find(".btn-download-mobile").click( function(){
-        //     var link = $("#my_iframe").contents().find(".btn-download-mobile").attr('href');
-        //     navigator.app.loadUrl( link, { openExternal:true } );
-
-        // })   
+         // $("#my_iframe").contents().find(".child-container .btn-download-mobile").click( function(){
+         //        var href = $(this).attr("download");
+         //        $(this).attr("href", href);
+         //        //alert(href)
+         //        navigator.app.loadUrl( href, { openExternal:true } );  
+         // })
+        // //click button download photo
+        $("#my_iframe").contents().find(".child-container div .btn-download-mobile").click( function(){
+            var link = $(this).attr('href');
+            window.open(link, "_system");
+        })   
   })
 
 	if(mostrou){
