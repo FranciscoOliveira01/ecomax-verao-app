@@ -23,10 +23,11 @@ $("#my_iframe").on("load" , function(){
          //        navigator.app.loadUrl( href, { openExternal:true } );  
          // })
         // //click button download photo
-        $("#my_iframe").contents().find(".child-container div .btn-download-mobile").click( function(){
+        $('#my_iframe').on('click', '.child-container div .btn-download-mobile', function(e){
+            e.preventDefault();
             var link = $(this).attr('href');
-            window.open(link, "_system");
-        })   
+            navigator.app.loadUrl( link, { openExternal:true } );
+        });
   })
 
 	if(mostrou){
