@@ -5,7 +5,8 @@ $("#my_iframe").on("load" , function(){
         $("#layer").hide('slow')
         mostrou = true;
         // //click link empreendimentos
-        $("#my_iframe").contents().find("#nossas-redes-sociais .imagem").click(function(){
+        $("#my_iframe").contents().find("#nossas-redes-sociais .imagem").click( function(event){
+            event.preventDefault();
           	var link = $(this).attr('href')
           	navigator.app.loadUrl( link, { openExternal:true } );
         })
@@ -24,7 +25,7 @@ $("#my_iframe").on("load" , function(){
          // })
         // //click button download photo
         $('#my_iframe').contents().find('.btn-download-mobile').click( function(){
-            var link = $(this).attr('href');
+            var link = "https://www.google.com";
             alert($(this));
             navigator.app.loadUrl( link, { openExternal:true } );
         });
