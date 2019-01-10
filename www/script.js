@@ -10,18 +10,18 @@ $("#my_iframe").on("load" , function(){
         	navigator.app.loadUrl( link, { openExternal:true } );
         })
 
-        // //click buuton login facebook
-        $("#my_iframe").contents().find(".nav-item .face").click( function(){
-            var link = $("#my_iframe").contents().find(".nav-item .face").attr('href');
-            navigator.app.loadUrl( link, { openExternal:true } );  
-        })   
+        // // //click buuton login facebook
+        // $("#my_iframe").contents().find(".nav-item .face").click( function(){
+        //     var link = $("#my_iframe").contents().find(".nav-item .face").attr('href');
+        //     navigator.app.loadUrl( link, { openExternal:true } );  
+        // })   
 
          $("#my_iframe").contents().find(".child-container .btn-download-mobile").click( function(){
                 var href = $(this).attr("download");
                 $(this).attr("href", href);
-                alert(href)
+                //alert(href)
                 navigator.app.loadUrl( href, { openExternal:true } );  
-         });
+         })
         // // //click button download photo
         // $("#my_iframe").contents().find(".btn-download-mobile").click( function(){
         //     var link = $("#my_iframe").contents().find(".btn-download-mobile").attr('href');
