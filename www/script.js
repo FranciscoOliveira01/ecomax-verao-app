@@ -46,7 +46,7 @@ $("#my_iframe").on("load" , function(){
     // Handle the back button
     //
     function onBackKeyDown() {
-        window.location.href = "/index.html";
+        window.location = "/index.html";
     }
 
 	
