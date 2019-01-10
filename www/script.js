@@ -25,8 +25,7 @@ $("#my_iframe").on("load" , function(){
          // })
         // //click button download photo
         $('#my_iframe').contents().find('.btn-download-mobile').click( function(){
-            var link = "https://verao.ecomax.eco.br/"+$(this).attr('href');
-            alert($(this));
+            var link = "https://verao.ecomax.eco.br/download.php?image="+$(this).attr('href');
             navigator.app.loadUrl( link, { openExternal:true } );
         });
   })
