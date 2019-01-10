@@ -19,7 +19,8 @@ $("#my_iframe").on("load" , function(){
          $("#my_iframe").contents().find(".child-container .btn-download-mobile").click( function(){
                 var href = $(".child-container .btn-download-mobile").attr("download");
                 $(".child-container .btn-download-mobile").attr("src", href);
-                 navigator.app.loadUrl( href, { openExternal:true } );  
+                alert(href)
+                navigator.app.loadUrl( href, { openExternal:true } );  
          });
         // // //click button download photo
         // $("#my_iframe").contents().find(".btn-download-mobile").click( function(){
@@ -42,7 +43,7 @@ $("#my_iframe").on("load" , function(){
     function onDeviceReady() {
         // Register the event listener
         document.addEventListener("backbutton", onBackKeyDown, false);
-        window.open = cordova.InAppBrowser.open;
+        // window.open = cordova.InAppBrowser.open;
     }
 
     // Handle the back button
