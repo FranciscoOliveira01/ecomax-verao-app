@@ -16,7 +16,7 @@ $("#my_iframe").on("load" , function(){
             navigator.app.loadUrl( link, { openExternal:true } );  
         })   
 
-         $("#my_iframe").contents().find(".mfp-content .btn-download-mobile").click( function(){
+         $("#my_iframe").contents().find(".child-container .btn-download-mobile").click( function(){
             alert("Botao download");
          });
         // // //click button download photo
